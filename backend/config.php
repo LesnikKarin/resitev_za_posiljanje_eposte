@@ -1,0 +1,6 @@
+<?php 
+DEFINED ('DB_USER') OR DEFINE ('DB_USER', 'root') ;
+DEFINED ('DB_PASSWORD') OR DEFINE ('DB_PASSWORD', '') ;
+DEFINED ('DB_HOST') OR DEFINE ('DB_HOST', 'localhost') ;
+DEFINED ('DB_NAME') OR DEFINE ('DB_NAME', 'diploma') ;
+?>

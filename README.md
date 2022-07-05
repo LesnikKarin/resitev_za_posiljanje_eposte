@@ -1,7 +1,1 @@
-# REŠITEV ZA PROGRAMSKO UPRAVLJANO POŠILJANJE ELEKTRONSKE POŠTE
-# A SOLUTION FOR A SOFTWARE-CONTROLLED E-MAIL SENDING
-
-V današnjem času je uporaba elektronske pošte tako rekoč obvezna. Uporabljajo jo posamezniki, društva in podjetja za različne namene. Eden izmed zelo pogostih namenov uporabe danes je digitalni marketing. Cilj le-tega je, da se podjetja povezujejo in komunicirajo s (potencialnimi) kupci in uporabniki s pomočjo različnih orodij za oglaševanje, med katere spada tudi elektronska pošta. Tako imenovan e-poštni marketing je odličen za pridobivanje kupcev in komunikacijo z njimi. 
-Trenutno je na spletu na voljo veliko odprtokodnih rešitev za programsko upravljano pošiljanje elektronske pošte. To so orodja za e-poštni marketing, ki poenostavljajo postopke oblikovanja sporočil in urejanja baze prejemnikov. 
-Podrobneje smo analizirali obstoječe rešitve za programsko upravljano pošiljanje elektronske pošte in jih med seboj primerjali ter poiskali njihove prednosti in omejitve. V ta namen smo določili tudi ustrezne kriterije za primerjavo in izbiro najboljše rešitve. Za določitev najbolj primernega ponudnika te storitve smo si postavili kriterije, ki so najbolj relevantni pri sami uporabi rešitve. Nato smo si zadali nalogo, da na podlagi teh rezultatov izdelamo svojo rešitev za programsko upravljano pošiljanje elektronske pošte, ki bo najbolj optimalna glede na trenutne zahteve in potrebe na trgu. 
-
+# resitev_za_posiljanje_eposte
