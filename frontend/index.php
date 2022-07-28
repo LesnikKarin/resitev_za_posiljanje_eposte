@@ -1,6 +1,6 @@
+<?php include '../backend/loginCode.php' ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include '../backend/loginCode.php' ?>
 
 <head>
   <meta charset="utf-8" />
@@ -23,15 +23,18 @@
   </nav>
 
   <?php
-  if (isset($_SESSION["uporabnik"])) {
+
+
+  if (isset($_SESSION["user"])) {
     echo '<br>
         <div class="d-flex justify-content-center align-items-center container">
           <div class="col-md-4 col-md-offset-4">
       
-            <form method="post" id="form" enctype="multipart/form-data">
-              
-              <div class="form-group">
-                <label for="">Receiver email:</label>
+            <form method="post" id="form" enctype="multipart/form-data">';
+            include '../backend/getSmtp.php';
+
+    echo '<div class="form-group">
+                <label for="">Receiver&#039;s email:</label>
                 <input type="text" class="form-control" id="receiver" placeholder="Enter receiver(s)" name="receiver">
               </div><br>
               <div class="form-group">

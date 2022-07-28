@@ -1,4 +1,5 @@
-<?php include '../backend/loginCode.php'?>
+<?php include '../backend/loginCode.php';
+include '../backend/smtpCode.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,29 +16,37 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-<nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-      <a class="navbar-brand" href="../frontend/index.php">Email Sending App</a>
-      <?php include '../backend/navbar.php'?>
-    </div>
-  </nav>
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="../frontend/index.php">Email Sending App</a>
+            <?php include '../backend/navbar.php' ?>
+        </div>
+    </nav>
     <br>
     <div class="d-flex justify-content-center align-items-center container">
         <div class="col-md-4 col-md-offset-4">
-            <form action="../frontend/login.php" method="post">
+            <form action="" method="post">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <label>SMTP Host</label>
+                    <select class="form-select" aria-label="Default select example" name="host" onchange="document.getElementById('text_content').value=this.options[this.selectedIndex].text">
+                        <option selected>Select</option>
+                        <option value="1">smtp.mail.yahoo.com</option>
+                        <option value="2">smtp-mail.outlook.com</option>
+                        <option value="3">smtp.gmail.com</option>
+                    </select>
+                    <input type="hidden" name="host" id="text_content" value="" />
                 </div><br>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    <label>Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                </div><br>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="password">
                 </div><br>
 
-                <button type="submit" class="btn btn-primary">Login</button>
-                <div>
-                    <p>Not a member? <a href="../frontend/register.php">Register</a></p>
-                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+
             </form>
         </div>
     </div>
